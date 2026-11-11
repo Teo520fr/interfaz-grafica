@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de outfits</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <h2>Atuendo</h2>
+        <nav>
+            <a href="">Inicio</a>
+            <a href="" class="activo">Outfits</a>
+            <a href="">Prendas</a>
+            <a href="">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Detalle de outfits</h2>
+            <p>Mira qué prendas componen cada combinación.</p>
+        </article>
+
+        <section class="outfits">
+            <h3>Mis outfits</h3>
+            <article class="activo">
+                <h3>Look de oficina</h3>
+                <p>Trabajar</p>
+            </article>
+            <article>
+                <h3>Salida de viernes</h3>
+                <p>Salir</p>
+            </article>
+            <article>
+                <h3>Día de universidad</h3>
+                <p>Estudiar</p>
+            </article>
+            <article>
+                <h3>Entreno de la mañana</h3>
+                <p>Hacer deporte</p>
+            </article>
+        </section>
+
+        <section class="detalle">
+            <h3>Look de oficina</h3>
+            <p>Ocasión: Trabajar · 3 prendas</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Prenda</th>
+                        <th>Categoría</th>
+                        <th>Color</th>
+                        <th>Talla</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Camiseta básica</td>
+                        <td>Camisetas</td>
+                        <td>Blanco</td>
+                        <td>M</td>
+                    </tr>
+                    <tr>
+                        <td>Jean slim</td>
+                        <td>Pantalones</td>
+                        <td>Azul</td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td>Camisa de lino</td>
+                        <td>Camisas</td>
+                        <td>Beige</td>
+                        <td>M</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="combina">
+            <h3>Combina tus prendas</h3>
+            <p>Elige un outfit y marca las prendas que lo componen.</p>
+
+            <label for="outfit">Outfit</label>
+            <select id="outfit" name="outfit">
+                <option value="oficina">Look de oficina</option>
+                <option value="viernes">Salida de viernes</option>
+                <option value="universidad">Día de universidad</option>
+                <option value="entreno">Entreno de la mañana</option>
+            </select>
+
+            <fieldset class="prendas">
+                <legend class="sr-only">Prendas del outfit</legend>
+
+                <label class="prenda">
+                    <input type="checkbox" name="prendas" value="camiseta-basica" checked>
+                    <span class="prenda-nombre">Camiseta básica</span>
+                    <span class="prenda-info">Camisetas · Blanco · M</span>
+                </label>
+
+                <label class="prenda">
+                    <input type="checkbox" name="prendas" value="jean-slim" checked>
+                    <span class="prenda-nombre">Jean slim</span>
+                    <span class="prenda-info">Pantalones · Azul · 32</span>
+                </label>
+
+                <label class="prenda">
+                    <input type="checkbox" name="prendas" value="camisa-de-lino" checked>
+                    <span class="prenda-nombre">Camisa de lino</span>
+                    <span class="prenda-info">Camisas · Beige · M</span>
+                </label>
+
+                <label class="prenda">
+                    <input type="checkbox" name="prendas" value="chaqueta-cuero">
+                    <span class="prenda-nombre">Chaqueta de cuero</span>
+                    <span class="prenda-info">Chaquetas · Negro · L</span>
+                </label>
+
+                <label class="prenda">
+                    <input type="checkbox" name="prendas" value="tenis-deportivos">
+                    <span class="prenda-nombre">Tenis deportivos</span>
+                    <span class="prenda-info">Zapatos · Blanco · 40</span>
+                </label>
+
+                <label class="prenda">
+                    <input type="checkbox" name="prendas" value="pantaloneta-deportiva">
+                    <span class="prenda-nombre">Pantaloneta deportiva</span>
+                    <span class="prenda-info">Pantalones · Gris · M</span>
+                </label>
+            </fieldset>
+
+            <div class="acciones">
+                <p id="contador">3 prendas seleccionadas</p>
+                <div>
+                    <button type="button" class="btn-limpiar">Limpiar</button>
+                    <button type="submit" class="btn-guardar">Guardar combinación</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="final">
+            <h2>¿Listo para tu próximo look?</h2>
+            <p>Crea una nueva combinación con las prendas de tu armario.</p>
+            <button type="button">Crear nuevo outfit</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Atuendo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
