@@ -276,9 +276,8 @@ select {
   color: var(--dorado);
 }
 
-.acciones div {
-  display: flex;
-  gap: 1rem;
+.btn-limpiar {
+  margin-left: auto;
 }
 
 button {
